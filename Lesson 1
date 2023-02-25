@@ -53,6 +53,7 @@ _______________________8888_____________
 
 
 Ответ:
+public class Main {
  public static void main(String[] args) {
         System.out.println("____888888______________________________");
         System.out.println("____888888______________________________");
