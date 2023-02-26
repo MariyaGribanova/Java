@@ -1,0 +1,10 @@
+Вывести/напечатать смайлик (не :), а настоящий смайлик одним символом).
+
+Ответ:
+public class HW2_2 {
+    public static void main(String[] args) {
+        String smile = "\uD83D\uDE0A";
+
+        System.out.println(smile);
+    }
+}
