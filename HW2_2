@@ -7,8 +7,10 @@ public class HW2_2 {
         double a = 105;
         double b = 27;
 
-        double result = a/b;
+        double result = (a/b);
 
         System.out.println(result);
+        System.out.println(a/2);
+        System.out.println(b/2);
     }
 }
