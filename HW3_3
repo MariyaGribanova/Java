@@ -6,20 +6,27 @@
 значение переменной меньше 5 или больше 40 - если предыдущие условие ложное
 
 Ответ:
-public class HW3_3 {
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
         int i = 9;
 
         if (i > 10) {
             System.out.println("i больше 10");
-        } else if (i < 100){
+        }
+
+        if (i < 100){
                 System.out.println("i меньше 100");
-        } else if ((i/2)>20) {
+        }
+
+        if (i / 2 > 20) {
             System.out.println("результат деления i на 2 больше 20");
-        } else if (i >= 5 || i <= 40){
+        }
+
+        if (i >= 5 && i <= 40){
             System.out.println("значение переменной i между 5 и 40 включительно");
-        } else if (i < 5 || i > 40){
+        }
+
+        if (i < 5 || i > 40){
             System.out.println("значение переменной i меньше 5 или больше 40");
         }
     }
