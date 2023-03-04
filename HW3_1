@@ -11,11 +11,11 @@ public class HW3_1 {
         int b = 20;
 
         if (a == b) {
-            System.out.println("Переменные равны");
+            System.out.println("a == b");
         } else if (a < b) {
-            System.out.println("переменная a меньше b");
+            System.out.println("a < b");
         } else if (a > b) {
-            System.out.println("переменная b меньше a");
+            System.out.println("a > b");
         }
     }
 }
