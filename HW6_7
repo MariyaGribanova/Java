@@ -17,9 +17,7 @@ public class HW6_7 {
 
         int count = 0;
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                count++;
-            }
+            count += array[i].length;
         }
         System.out.println(count);
     }
