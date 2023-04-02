@@ -1,0 +1,28 @@
+Задание:
+Необходимо создать класс Manager с полями: имя, возраст, пол, ЗП в день и количество подчиненных. Все поля сделать приватными и для каждого поля добавить методы 
+set и get. Класс должен иметь метод - getSalary(int days), метод возвращает зарплату за количество дней которые были переданы в качестве аргумента.
+К рассчитанной ЗП должно прибавляться по 1% за каждого подчиненного.
+
+Ответ:
+public class HW8_1_2_Manager extends HW8_1_1_Employee {
+
+ private int subordinates;
+
+    public HW8_1_2_Manager(String name, int age, String sex, int salaryPerDay) {
+        super(name, age, sex, salaryPerDay);
+    }
+
+    public int getSubordinates() {
+        return subordinates;
+    }
+
+    public void setSubordinates(int subordinates) {
+        this.subordinates = subordinates;
+    }
+    
+    public int getSalary(int days){
+        int salary = getSalary_per_day() * days;
+        return (int)(salary + (salary * (getSubordinates()) / 100.0));
+
+        }
+    }
