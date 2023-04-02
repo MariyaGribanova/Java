@@ -1,14 +1,16 @@
-Задание:
+задание:
+
 Необходимо создать класс Employee с полями: имя, возраст, пол и ЗП в день. Все поля сделать приватными и для каждого поля добавить методы set и get. 
 Класс должен иметь метод - getSalary(int days), метод возвращает зарплату за количество дней которые были переданы в качестве аргумента.
+
 
 Ответ:
 public class HW8_1_1_Employee {
 
-private String name;
-private int age;
-private String sex;
-private int salaryPerDay;
+    private String name;
+    private int age;
+    private String sex;
+    private int salaryPerDay;
 
     public HW8_1_1_Employee(String name, int age, String sex, int salaryPerDay) {
         this.name = name;
@@ -16,6 +18,7 @@ private int salaryPerDay;
         this.sex = sex;
         this.salaryPerDay = salaryPerDay;
     }
+
 
     public String getName() {
         return name;
@@ -47,6 +50,10 @@ private int salaryPerDay;
 
     public void setSalary_per_day(int salary_per_day) {
         this.salary_per_day = salary_per_day;
-    }
 
+        public int getSalary (int days){ //метод возвращает зарплату за количество дней которые были переданы в качестве аргумента
+            return salaryPerDay() * days;
+        }
+
+    }
 }
